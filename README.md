@@ -13,7 +13,8 @@
  <p>=> Does not return an error when placing two operation signals in a row</p>
 
 # Features and improvements for upcoming versions
- <p>=> Dark mode option</p>
- <p>=> improve JS code and use the Object Orientation paradigm</p>
- <p>=> Calculator solve more complex problems (such as operations with parentheses)</p>
- <p>=> Improve input validations</p>
+<p>=> Dark mode option</p>
+<p>=> improve JS code and use the Object Orientation paradigm</p>
+<p>=> Calculator solve more complex problems (such as operations with parentheses)</p>
+<p>=> Improve input validations</p>
+<p>=>Mobile Version</p>
