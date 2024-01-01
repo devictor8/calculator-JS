@@ -11,7 +11,9 @@
       <h1>Calculator</h1>
     </header>
     <main>
-      <section id="screenRes"></section>
+      <section id="screenRes">
+
+      </section>
       <section id="buttonscreen">
         <p>
           <input type="button" value="7" onclick="input('7')" />
@@ -28,17 +30,18 @@
           <input type="button" value="2" onclick="input('2')" />
           <input type="button" value="3" onclick="input('3')" />
         </p>
+        <input id="equalButton" type="button" value="=" onclick="result()" />
+        <input id="clearButton" type="button" value="C" onclick="clearScreen()" />
       </section>
       <aside id="operators">
-        <input type="button" value="+" onclick="input('+')" />
-        <input type="button" value="-" onclick="input('-')" />
-        <input type="button" value="x" onclick="input('x')" />
-        <input type="button" value="/" onclick="input('/')" />
+        <input type="button" value="+" onclick="input(' + ')" />
+        <input type="button" value="-" onclick="input(' - ')" />
+        <input type="button" value="x" onclick="input(' * ')" />
+        <input type="button" value="/" onclick="input(' / ')" />
       </aside>
-      <input type="button" value="=" onclick="result()" />
     </main>
     <footer>
-      <p>Made By devictor8</p>
+      <p>Made By <a href="https://github.com/devictor8">devictor8</a></p>
     </footer>
     <script src="script.js"></script>
   </body>

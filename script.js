@@ -1,16 +1,24 @@
-operation = ''
+var operation = ''
+var calculatorScreen = document.querySelector('#screenRes')
 
 function input(value) {
     operation += value
     console.log(operation)
-
+    printScreen()
 }
 
 function printScreen() {
-    var calculatorScreen = document.querySelector('#screenRes')
+    calculatorScreen.innerHTML = operation.replace(' * ', ' x ')
 }
 
 function result() {
     let res = eval(operation)
-    console.log(res)
+    calculatorScreen.innerHTML = res
+    operation = `${res}`
+}
+
+function clearScreen() {
+    console.log('clear')
+    operation = ''
+    calculatorScreen.innerHTML = ''
 }

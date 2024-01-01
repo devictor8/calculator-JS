@@ -32,6 +32,10 @@ footer {
 }
 
 #screenRes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 50px;
     background-color: rgb(247, 247, 235);
     width: 450px;
     height: 150px;
@@ -41,9 +45,8 @@ footer {
     border-radius: 20px;
 }
 
-#buttonscreen > p{
-    display: flex;
-    justify-content: start;
+#buttonscreen {
+    display: inline-block;
 }
 
 #buttonscreen > p > input{
@@ -55,3 +58,33 @@ footer {
     font-size: 30px;
 }
 
+#operators > input {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(255, 172, 113);
+    font-size: 30px;
+}
+
+#operators {
+    display: inline-block;
+    
+    
+}
+
+#equalButton {
+    width: 206px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(255, 128, 36);
+    font-size: 30px;
+}
+
+#clearButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(88, 197, 84);
+    font-size: 30px;
+}
