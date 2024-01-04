@@ -17,4 +17,26 @@
 <p>=> improve JS code and use the Object Orientation paradigm</p>
 <p>=> Calculator solve more complex problems (such as operations with parentheses)</p>
 <p>=> Improve input validations</p>
-<p>=>Mobile Version</p>
+<p>=>compatibility with mobile screen size</p>
+
+# v2.0
+![image](https://github.com/devictor8/calculator-JS/assets/136649508/8c1f4a8f-a6c5-4efc-80f5-7be7c67ac7d8)
+
+<p>You can test v2.0 <a href='https://devictor8.github.io/calculator-JS/'>here</a> </p>
+
+# new features:
+<p>=> Add the zero button (✨sorry, i forgot in the last version✨)</p>
+<p>=> Add decimal button, backspace button and clear button</p>
+<p>=> Add a menu </p> 
+<p>=> Add dark mode option</p>
+<p>=> Now it is compatible with mobile screen size</p>
+
+# Bugs Fixed:
+<p>=> Division by zero is no longer allowed</p>
+<p>=> Incorrectly written expressions are no longer carried out</p>
+
+# Features and improvements for upcoming versions
+<p>=> Mudar as cores(I made a bad color choice at the beginning)</p>
+<p>=> Some bugs</p>
+
+
