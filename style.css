@@ -64,14 +64,6 @@ a {
     font-size: 30px;
 }
 
-#clearButton {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: rgb(88, 197, 84);
-    font-size: 30px;
-}
-
 #operators > input {
     display: block;
     width: 100px;
@@ -116,4 +108,46 @@ a {
     border-radius: 10px;
     background-color: rgb(252, 143, 66);
     font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header > h1 {
+        margin: auto;
+    }
+    
+    main {
+        position: relative;
+        padding-bottom: 0px;
+        width: 350px;
+        height: auto;
+        z-index: 2;
+    }
+
+    footer {
+        font-size: 16px;
+        margin: auto;
+    }
+
+    #screenRes {
+        width: 350px;
+        font-size: 45px;
+    }
+    
+    #operators > input , #buttonscreen > p > input, #backspace {
+        width: 70px;
+
+    }
+
+    #equalButton {
+        width: 220px;
+    }
+
+    #sideBar {
+        position: absolute;
+        margin-left: 20px;
+    }
 }

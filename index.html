@@ -11,7 +11,7 @@
     <header>
       <h1>Calculator</h1>
     </header>
-    <main id="mainSpace">
+    <main id="mainSpace" >
       <section id="screenRes">
 
       </section>
@@ -32,15 +32,15 @@
           <input class='numberButton' type="button" value="3" onclick="input('3')" />
         </p>
         <p>
-          <input type="button" value="." onclick="input('.')">
+          <input class="numberButton" type="button" value="." onclick="input('.')">
           <input class='numberButton' id="zeroButton" type="button" value="0" onclick="input('0')">
-          <button id="backspace" onclick="backSpaceButton()"><img src="images/backspace_icon.png" alt="backspace"></button>
+          <button class="operatorsButtons" id="backspace" onclick="backSpaceButton()"><img src="images/backspace_icon.png" alt="backspace"></button>
         </p>
         <input id="equalButton" type="button" value="=" onclick="result()">
         
       </section>
       <aside id="operators">
-        <input id="clearButton" type="button" value="C" onclick="clearScreen()" />
+        <input class="operatorsButtons" type="button" value="C" onclick="clearScreen()" />
         <input class="operatorsButtons" type="button" value="+" onclick="input(' + ')" />
         <input class="operatorsButtons" type="button" value="-" onclick="input(' - ')" />
         <input class="operatorsButtons" type="button" value="x" onclick="input(' * ')" />
@@ -59,7 +59,7 @@
       </section>
     </main>
     <footer>
-      <p>Made By <a class="special" href="https://github.com/devictor8">devictor8</a></p>
+      <p>Made By <a class="special" href="https://github.com/devictor8" target="_blank">devictor8</a></p>
     </footer>
     <script src="script.js"></script>
   </body>

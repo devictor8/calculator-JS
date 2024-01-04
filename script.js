@@ -5,7 +5,7 @@ var darkModeCheckBox = document.getElementById('darkMode')
 
 const calculator = {
     calculatorScreen: document.querySelector('#screenRes'),
-    operation: '',
+    operation: ''
 }
 
 function input(value) {
@@ -19,9 +19,19 @@ function printScreen() {
 }
 
 function result() {
-    let res = eval(calculator.operation)
-    calculator.calculatorScreen.innerHTML = res
-    calculator.operation = `${res}`
+    try {
+        let res = eval(calculator.operation)
+        if (res != undefined && res != Infinity) {
+            calculator.calculatorScreen.innerHTML = res
+            calculator.operation = `${res}`
+        } else {
+            calculator.operation = ''
+            calculator.calculatorScreen.innerHTML = 'Enter a valid operation'
+        }
+    } catch {
+        calculator.calculatorScreen.innerHTML = 'ERROR'
+        calculator.operation = ''
+    }
 }
 
 function clearScreen() {
@@ -30,8 +40,8 @@ function clearScreen() {
     calculator.calculatorScreen.innerHTML = ''
 }
 
-function menuListener() {
-    if (isMenuOpen) {
+function menuListener(main = false) {
+    if (isMenuOpen || main) {
         closeMenu()
     } else {
         openMenu()
