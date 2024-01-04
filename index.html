@@ -4,44 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Calculator</h1>
     </header>
-    <main>
+    <main id="mainSpace" >
       <section id="screenRes">
 
       </section>
       <section id="buttonscreen">
         <p>
-          <input type="button" value="7" onclick="input('7')" />
-          <input type="button" value="8" onclick="input('8')" />
-          <input type="button" value="9" onclick="input('9')" />
+          <input class='numberButton' type="button" value="7" onclick="input('7')" />
+          <input class='numberButton' type="button" value="8" onclick="input('8')" />
+          <input class='numberButton' type="button" value="9" onclick="input('9')" />
         </p>
         <p>
-          <input type="button" value="4" onclick="input('4')" />
-          <input type="button" value="5"onclick="input('5')" />
-          <input type="button" value="6" onclick="input('6')" />
+          <input class='numberButton' type="button" value="4" onclick="input('4')" />
+          <input class='numberButton' type="button" value="5"onclick="input('5')" />
+          <input class='numberButton' type="button" value="6" onclick="input('6')" />
         </p>
         <p>
-          <input type="button" value="1" onclick="input('1')" />
-          <input type="button" value="2" onclick="input('2')" />
-          <input type="button" value="3" onclick="input('3')" />
+          <input class='numberButton' type="button" value="1" onclick="input('1')" />
+          <input class='numberButton' type="button" value="2" onclick="input('2')" />
+          <input class='numberButton' type="button" value="3" onclick="input('3')" />
         </p>
-        <input id="equalButton" type="button" value="=" onclick="result()" />
-        <input id="clearButton" type="button" value="C" onclick="clearScreen()" />
+        <p>
+          <input class="numberButton" type="button" value="." onclick="input('.')">
+          <input class='numberButton' id="zeroButton" type="button" value="0" onclick="input('0')">
+          <button class="operatorsButtons" id="backspace" onclick="backSpaceButton()"><img src="images/backspace_icon.png" alt="backspace"></button>
+        </p>
+        <input id="equalButton" type="button" value="=" onclick="result()">
+        
       </section>
       <aside id="operators">
-        <input type="button" value="+" onclick="input(' + ')" />
-        <input type="button" value="-" onclick="input(' - ')" />
-        <input type="button" value="x" onclick="input(' * ')" />
-        <input type="button" value="/" onclick="input(' / ')" />
+        <input class="operatorsButtons" type="button" value="C" onclick="clearScreen()" />
+        <input class="operatorsButtons" type="button" value="+" onclick="input(' + ')" />
+        <input class="operatorsButtons" type="button" value="-" onclick="input(' - ')" />
+        <input class="operatorsButtons" type="button" value="x" onclick="input(' * ')" />
+        <input class="operatorsButtons" type="button" value="/" onclick="input(' / ')" />
       </aside>
+      
+      <section id="menu">
+        <div>
+        <img id="menuIcon" src="images/open_menu_icon.png" alt="menu_icon" onclick="menuListener()">
+        </div>
+        <nav id="sideBar">
+          <label for="darkMode">Dark Mode</label>
+          <input type="checkbox" name="darkMode" id="darkMode" onclick="checkboxState()">
+          <p><a class="special" href="https://github.com/devictor8/calculator-JS" target="_blank">Source code</a></p>
+        </nav>
+      </section>
     </main>
     <footer>
-      <p>Made By <a href="https://github.com/devictor8">devictor8</a></p>
+      <p>Made By <a class="special" href="https://github.com/devictor8" target="_blank">devictor8</a></p>
     </footer>
     <script src="script.js"></script>
   </body>
